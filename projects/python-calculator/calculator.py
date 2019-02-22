@@ -21,3 +21,11 @@ if __name__ == "__main__":
     ops = {"1": add, "2": subtract, "3": multiply, "4": divide}
     if choice in ops:
         print(f"Result: {ops[choice](a, b)}")
+
+def power(a, b):
+    return a ** b
+
+def modulo(a, b):
+    if b == 0:
+        raise ValueError("Cannot modulo by zero")
+    return a % b
