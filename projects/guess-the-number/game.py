@@ -1,20 +1,31 @@
 import random
 
-def play_game(min_val=1, max_val=100):
+DIFFICULTIES = {
+    "easy": (1, 50, 10),
+    "medium": (1, 100, 7),
+    "hard": (1, 500, 9),
+}
+
+def play_game(difficulty="medium"):
+    min_val, max_val, max_attempts = DIFFICULTIES[difficulty]
     secret = random.randint(min_val, max_val)
     attempts = 0
-    print(f"I'm thinking of a number between {min_val} and {max_val}")
+    print(f"Difficulty: {difficulty} | Range: {min_val}-{max_val} | Max attempts: {max_attempts}")
     
-    while True:
+    while attempts < max_attempts:
         guess = int(input("Your guess: "))
         attempts += 1
         if guess < secret:
-            print("Too low!")
+            print(f"Too low! ({max_attempts - attempts} left)")
         elif guess > secret:
-            print("Too high!")
+            print(f"Too high! ({max_attempts - attempts} left)")
         else:
             print(f"Correct! You got it in {attempts} attempts!")
-            return attempts
+            return True
+    
+    print(f"Game over! The number was {secret}")
+    return False
 
 if __name__ == "__main__":
-    play_game()
+    diff = input("Choose difficulty (easy/medium/hard): ").lower()
+    play_game(diff if diff in DIFFICULTIES else "medium")
