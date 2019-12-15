@@ -38,3 +38,16 @@ if __name__ == "__main__":
         add_todo(" ".join(sys.argv[2:]))
     elif sys.argv[1] == "done":
         complete_todo(int(sys.argv[2]) - 1)
+
+def delete_todo(index):
+    todos = load_todos()
+    if 0 <= index < len(todos):
+        removed = todos.pop(index)
+        save_todos(todos)
+        print(f"Removed: {removed['text']}")
+
+def clear_completed():
+    todos = load_todos()
+    todos = [t for t in todos if not t["done"]]
+    save_todos(todos)
+    print("Cleared completed todos")
