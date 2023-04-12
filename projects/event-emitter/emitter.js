@@ -1,9 +1,14 @@
 class EventEmitter {
   constructor() {
     this.listeners = new Map();
+    this.wildcardListeners = [];
   }
 
   on(event, callback) {
+    if (event === '*') {
+      this.wildcardListeners.push({ callback, once: false });
+      return this;
+    }
     if (!this.listeners.has(event)) {
       this.listeners.set(event, []);
     }
@@ -12,6 +17,10 @@ class EventEmitter {
   }
 
   once(event, callback) {
+    if (event === '*') {
+      this.wildcardListeners.push({ callback, once: true });
+      return this;
+    }
     if (!this.listeners.has(event)) {
       this.listeners.set(event, []);
     }
@@ -21,12 +30,21 @@ class EventEmitter {
 
   emit(event, ...args) {
     const handlers = this.listeners.get(event) || [];
-    handlers.forEach(handler => handler.callback(...args));
+    handlers.forEach(h => h.callback(event, ...args));
+    this.wildcardListeners.forEach(h => h.callback(event, ...args));
+
     this.listeners.set(event, handlers.filter(h => !h.once));
-    return handlers.length > 0;
+    this.wildcardListeners = this.wildcardListeners.filter(h => !h.once);
+    return handlers.length > 0 || this.wildcardListeners.length > 0;
   }
 
   off(event, callback) {
+    if (event === '*') {
+      this.wildcardListeners = callback
+        ? this.wildcardListeners.filter(h => h.callback !== callback)
+        : [];
+      return this;
+    }
     if (!callback) {
       this.listeners.delete(event);
     } else {
@@ -37,7 +55,12 @@ class EventEmitter {
   }
 
   listenerCount(event) {
-    return (this.listeners.get(event) || []).length;
+    if (event === '*') return this.wildcardListeners.length;
+    return (this.listeners.get(event) || []).length + this.wildcardListeners.length;
+  }
+
+  eventNames() {
+    return [...this.listeners.keys()];
   }
 }
 
