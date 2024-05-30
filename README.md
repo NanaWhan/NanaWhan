@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Chersih Banini Seinty</h1>
 <h3 align="center">I am a Software Engineer with a track record in building web applications that provide services to a wide range of professionals and organizations.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=NanaWhan&label=Profile Views&color=0e75b6&style=flat" alt="Chersih Banini Seinty" /> </p>
+<p align="left"> <img src="c:\Users\Cheri\Downloads\me.jpg" alt="Chersih Banini Seinty" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy" target="_blank"><img src="https://github-profile-trophy.vercel.app/?username=NanaWhan" alt="Chersih Banini Seinty" /></a> </p>
 
@@ -14,7 +14,7 @@
 
 - 📄 Know about my experiences [My Resume](https://mega.nz/file/edc3gTII#nkQKuaBaVe8f3rCQ4t08U9YZOjuWxX2NrlrbMLn-HaI)
 
-- ⚡ Fun fact **I love dancing and Calisthenics**
+- ⚡ Fun fact **I love gaming and Coding**
   
 
 <!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=caleb-mantey" alt="caleb-mantey" /></a> </p> -->
