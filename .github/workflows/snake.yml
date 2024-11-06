@@ -17,14 +17,12 @@ jobs:
         id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          snake_color: 'cyan'
 
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v9
         with:
-          branch: main
-          force: true
           message: 'Generate Snake'
-          add: 'dist'
+          add: './dist'
+          push: true
