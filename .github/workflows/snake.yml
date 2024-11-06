@@ -2,14 +2,17 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # runs daily
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: 
+      contents: write
     steps:
       - uses: actions/checkout@v3
+
       - uses: Platane/snk@v3
         id: snake-gif
         with:
@@ -21,6 +24,7 @@ jobs:
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v9
         with:
-          branch: output
+          branch: main
           force: true
           message: 'Generate Snake'
+          add: 'dist'
