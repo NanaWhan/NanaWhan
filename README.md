@@ -52,7 +52,7 @@ Senior Full Stack Developer with expertise in building scalable microservices an
 
 
 ### 📫 Connect With Me:
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/cherish-banini](https://www.linkedin.com/in/cherish-banini-seinty-1171561a2/))
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([[https://linkedin.com/in/cherish-banini](https://www.linkedin.com/in/cherish-banini-seinty-1171561a2/)](https://www.linkedin.com/in/cherish-banini-seinty-1171561a2/))
 [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=safari&logoColor=white)](https://devseinty.netlify.app)
 
 <!-- GitHub Stats -->
