@@ -5,7 +5,7 @@
 </p>
 
 ## 🚀 About Me
-Senior Full Stack Developer with expertise in building scalable microservices and cloud-native applications. Currently working on Ghana's citizen services platform, serving 100K+ daily users.
+Senior Full Stack Developer with expertise in building scalable microservices and cloud-native applications. Currently working on a banking platform, serving 100K+ daily users.
 
 ### 🎯 Current Focus
 - Building scalable microservices architectures
