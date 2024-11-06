@@ -1,28 +1,37 @@
-name: Generate Snake Animation
+name: Generate Snake Animation Backup
 
 on:
+  # run automatically every 12 hours
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
+  
+  # allows to manually run the job at any time
   workflow_dispatch:
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - main
+    - master
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
-    permissions: 
-      contents: write
+    timeout-minutes: 10
+
     steps:
       - uses: actions/checkout@v3
-
-      - uses: Platane/snk@v3
-        id: snake-gif
+      
+      - name: Generate Snake
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          snake_color: 'cyan'
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Generate Snake'
-          add: './dist'
-          push: true
+          branch: main
+          message: 'Generate Backup Snake'
