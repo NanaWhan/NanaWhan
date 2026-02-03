@@ -5,13 +5,13 @@
 </p>
 
 ## 🚀 About Me
-Full Stack Developer with expertise in building scalable microservices and cloud-native applications. Currently working on a banking platform, serving 100K+ daily users.
+Senior Full Stack Engineer specializing in architecting scalable, cloud-native platforms and high-availability services. I lead end-to-end delivery across distributed systems, from system design and data modeling to performance tuning and production operations. Currently delivering a banking platform that serves 100K+ daily users.
 
 ### 🎯 Current Focus
-- Building scalable microservices architectures
-- Cloud-native application development
-- High-performance distributed systems
-- Real-time data processing pipelines
+- Leading microservices architecture and platform evolution
+- Designing resilient, observable cloud-native systems
+- Optimizing performance for high-throughput workloads
+- Building reliable real-time data processing pipelines
 
 ## 💻 Tech Stack 
 
