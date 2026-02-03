@@ -53,7 +53,7 @@ Senior Full Stack Engineer specializing in architecting scalable, cloud-native p
 
 ### 📫 Connect With Me:
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cherish-banini-seinty-1171561a2/)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=safari&logoColor=white)](https://devseinty.netlify.app)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=safari&logoColor=white)](https://www.cherishseinty.dev/))
 
 <!-- GitHub Stats -->
 <h3 align="center">📈 GitHub Stats:</h3>
