@@ -12,6 +12,14 @@ Full Stack Engineer who enjoys building reliable, cloud-native services and data
 - Improving reliability and performance
 - Shipping real-time data processing pipelines
 
+Senior Full Stack Engineer specializing in architecting scalable, cloud-native platforms and high-availability services. I lead end-to-end delivery across distributed systems, from system design and data modeling to performance tuning and production operations. Currently delivering a banking platform that serves 100K+ daily users.
+
+### 🎯 Current Focus
+- Leading microservices architecture and platform evolution
+- Designing resilient, observable cloud-native systems
+- Optimizing performance for high-throughput workloads
+- Building reliable real-time data processing pipelines
+
 ## 💻 Tech Stack 
 
 ### Languages & Frameworks
