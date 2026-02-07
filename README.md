@@ -5,6 +5,13 @@
 </p>
 
 ## 🚀 About Me
+Full Stack Engineer who enjoys building reliable, cloud-native services and data-driven products. I work across backend development, API design, and performance improvements, with a focus on clarity and maintainable systems. Currently working on a banking platform serving 100K+ daily users.
+
+### 🎯 Current Focus
+- Building scalable services and clean API contracts
+- Improving reliability and performance
+- Shipping real-time data processing pipelines
+
 Senior Full Stack Engineer specializing in architecting scalable, cloud-native platforms and high-availability services. I lead end-to-end delivery across distributed systems, from system design and data modeling to performance tuning and production operations. Currently delivering a banking platform that serves 100K+ daily users.
 
 ### 🎯 Current Focus
