@@ -4,7 +4,7 @@
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Full+Stack+Developer;Building+Great+Solutions&center=true&width=380&height=45">
 </p>
 
-## 🚀 About Me
+##  About Me
 Senior Full Stack Engineer specializing in architecting scalable, cloud-native platforms and high-availability services. I lead end-to-end delivery across distributed systems, from system design and data modeling to performance tuning and production operations. Currently delivering a banking platform that serves 100K+ daily users.
 
 ### 🎯 Current Focus
